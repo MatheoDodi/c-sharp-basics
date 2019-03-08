@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace helloWorld
 {
@@ -7,18 +6,16 @@ namespace helloWorld
     {
        public static void Main(string[] args)
         {
-            byte number = 5;
-            int count = 10;
-            float totalPrice = 20.95f;
-            char character = 'A';
-            string firstName = "Matthew";
-            bool isWorking = true;
-            Console.WriteLine(number);
-            Console.WriteLine(count);
-            Console.WriteLine(totalPrice);
-            Console.WriteLine(character);
-            Console.WriteLine(firstName);
-            Console.WriteLine(isWorking);
+            try
+            {
+                string number = "1234";
+                int num = Convert.ToByte(number);
+                Console.WriteLine(num);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("The number is too large to be stores in a byte");
+            }
         }
     }
 }

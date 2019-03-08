@@ -44,6 +44,7 @@ Contributions are what make the open source community such an amazing place to b
 
 - Data Types
 - Overflowing
+- Handling Expressions (try / catch blocks)
 
 <!-- CONTACT -->
 
