@@ -5,12 +5,20 @@ namespace helloWorld
 {
     class MainClass
     {
-        private const string sentance = "Hello World";
-
-        public static void Main(string[] args)
+       public static void Main(string[] args)
         {
-
-            Console.WriteLine(sentance);
+            byte number = 5;
+            int count = 10;
+            float totalPrice = 20.95f;
+            char character = 'A';
+            string firstName = "Matthew";
+            bool isWorking = true;
+            Console.WriteLine(number);
+            Console.WriteLine(count);
+            Console.WriteLine(totalPrice);
+            Console.WriteLine(character);
+            Console.WriteLine(firstName);
+            Console.WriteLine(isWorking);
         }
     }
 }
