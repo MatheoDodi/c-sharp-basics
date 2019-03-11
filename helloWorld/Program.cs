@@ -4,12 +4,12 @@ namespace helloWorld
 { 
     // Enums 
 
-    public enum ShippingMethod
-    {
-        RegularMail = 10,
-        RegisterdMail = 15,
-        Express = 30
-    }
+    //public enum ShippingMethod
+    //{
+    //    RegularMail = 10,
+    //    RegisterdMail = 15,
+    //    Express = 30
+    //}
     class MainClass
     {
        public static void Main(string[] args)
@@ -43,10 +43,49 @@ namespace helloWorld
 
             // Console.WriteLine((int)ShippingMethod.RegularMail);
 
-            int hour = 1;
+            //int hour = 1;
+            //Type t = hour.GetType();
+            //Console.WriteLine(t == typeof(Int64));
 
-            string answer = hour == 1 ? "Yes" : "No";
-            Console.WriteLine(answer);
+            //while (true)
+            //{
+            //    Console.WriteLine("Type Your Name: ");
+            //    string input = Console.ReadLine();
+
+            //    if (!String.IsNullOrWhiteSpace(input))
+            //    {
+            //        Console.WriteLine(input);
+            //        continue;
+            //    }
+
+            //    break;
+            //}
+
+            //for (int i = 1; i <= 100; i++)
+            //{
+            //    if (i % 3 == 0)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //}
+
+            int sum = 0;
+            while (true)
+            {
+                Console.WriteLine("Please enter a number type OK to exit");
+                string input = Console.ReadLine();
+                if (input == "OK" || input == "ok")
+                {
+                    break;
+                }
+                else
+                {
+                    Int32.TryParse(input, out int num);
+                    sum += num;
+                }
+            }
+
+            Console.WriteLine(sum);
         }
     }
 } 
