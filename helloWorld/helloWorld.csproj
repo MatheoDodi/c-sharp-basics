@@ -37,6 +37,7 @@
     <Compile Include="Person.cs" />
     <Compile Include="Disemvowel.cs" />
     <Compile Include="GradeBook.cs" />
+    <Compile Include="GradeStatistics.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
