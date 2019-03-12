@@ -43,9 +43,12 @@ Contributions are what make the open source community such an amazing place to b
 ## What Did I Learn
 
 - Primitive Data Types
+- Non-Primitive Data Types
 - Overflowing
 - Handling Expressions (try / catch blocks)
-- Non-Primitive Data Types
+- Debugging
+- Lists
+- Namespaces
 
 <!-- CONTACT -->
 

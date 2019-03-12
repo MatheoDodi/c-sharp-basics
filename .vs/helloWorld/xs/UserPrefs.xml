@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{379AA5BD-CD6C-4D27-8C2D-1E4742558EB1}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="helloWorld/Program.cs">
     <Files>
-      <File FileName="helloWorld/Program.cs" Line="13" Column="2" />
-      <File FileName="helloWorld/Person.cs" Line="12" Column="10" />
+      <File FileName="helloWorld/Program.cs" Line="149" Column="13" />
+      <File FileName="helloWorld/Disemvowel.cs" Line="12" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
