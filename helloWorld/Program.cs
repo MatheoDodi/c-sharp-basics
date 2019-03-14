@@ -151,15 +151,33 @@ namespace helloWorld
 
             // GRADES
 
-            GradeBook book = new GradeBook();
-            book.AddGrade(91);
-            book.AddGrade(89.2f);
-            book.AddGrade(75);
+            //GradeBook book = new GradeBook();
+            //book.AddGrade(91);
+            //book.AddGrade(89.2f);
+            //book.AddGrade(75);
 
-            GradeStatistics stats = book.ComputeStatistics();
-            string fullName = "   Matthew Dodi   ";
-            string newName = fullName.Trim();
-            Console.WriteLine(newName);
+            //GradeStatistics stats = book.ComputeStatistics();
+            //string fullName = "   Matthew Dodi   ";
+            //string newName = fullName.Trim();
+            //Console.WriteLine(newName);
+
+            float[] grades;
+            grades = new float[3];
+
+            AddGrades(grades);
+
+            foreach(int value in grades)
+            {
+                Console.WriteLine(value);
+            }
+        }
+
+        public static void AddGrades(float[] grades)
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                grades[i] = 89f;
+            }
         }
     }
 } 
