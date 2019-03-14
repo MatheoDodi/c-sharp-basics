@@ -53,6 +53,7 @@ Contributions are what make the open source community such an amazing place to b
 - Encapsulation
 - Unit Testing
 - String are reference type but behave like a value type
+- Delegates
   <!-- CONTACT -->
 
 ## Contact

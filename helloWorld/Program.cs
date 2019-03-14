@@ -148,36 +148,61 @@ namespace helloWorld
             //Console.WriteLine(numbers.LastIndexOf(1, 4));
             //string fullName = "Matthew Dodi";
             //Console.WriteLine(fullName);
-
-            // GRADES
-
-            //GradeBook book = new GradeBook();
-            //book.AddGrade(91);
-            //book.AddGrade(89.2f);
-            //book.AddGrade(75);
-
-            //GradeStatistics stats = book.ComputeStatistics();
             //string fullName = "   Matthew Dodi   ";
             //string newName = fullName.Trim();
             //Console.WriteLine(newName);
 
-            float[] grades;
-            grades = new float[3];
+            //float[] grades;
+            //grades = new float[3];
 
-            AddGrades(grades);
+            //AddGrades(grades);
 
-            foreach(int value in grades)
-            {
-                Console.WriteLine(value);
-            }
+            //foreach(int value in grades)
+            //{
+            //    Console.WriteLine(value);
+            //}
+
+            // GRADES
+
+            GradeBook book = new GradeBook();
+            book.AddGrade(91);
+            book.AddGrade(89.2f);
+            book.AddGrade(75);
+
+            GradeStatistics stats = book.ComputeStatistics();
+
+            WriteResult("Average", stats.AverageGrade);
+            WriteResult("Highest", (int)stats.HighestGrade);
+            WriteResult("Lowest", (double)stats.LowestGrade);
+
+            // Delegate
+            Writer writer = new Writer(WriteResult);
+
+            writer("Delegate", 100);
         }
+        public delegate void Writer(string description, int result);
 
-        public static void AddGrades(float[] grades)
+        static void WriteResult(string description, double result)
         {
-            for (int i = 0; i < 3; i++)
-            {
-                grades[i] = 89f;
-            }
+            Console.WriteLine($"{description}: {result}");
         }
+
+        static void WriteResult(string description, int result)
+        {
+            Console.WriteLine(description + ": " + result);
+        }
+
+        static void WriteResult(string description, float result)
+        {
+            Console.WriteLine(description + ": " + result);
+        }
+
+        //public static void AddGrades(float[] grades)
+        //{
+        //    for (int i = 0; i < 3; i++)
+        //    {
+        //        grades[i] = 89f;
+        //    }
+        //}
     }
 } 
