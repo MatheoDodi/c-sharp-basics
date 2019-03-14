@@ -50,8 +50,10 @@ Contributions are what make the open source community such an amazing place to b
 - Lists
 - Namespaces
 - Access Modifiers
-
-<!-- CONTACT -->
+- Encapsulation
+- Unit Testing
+- String are reference type but behave like a value type
+  <!-- CONTACT -->
 
 ## Contact
 

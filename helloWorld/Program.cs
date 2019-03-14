@@ -157,9 +157,9 @@ namespace helloWorld
             book.AddGrade(75);
 
             GradeStatistics stats = book.ComputeStatistics();
-            Console.WriteLine(stats.AverageGrade);
-            Console.WriteLine(stats.LowestGrade);
-            Console.WriteLine(stats.HighestGrade);
+            string fullName = "   Matthew Dodi   ";
+            string newName = fullName.Trim();
+            Console.WriteLine(newName);
         }
     }
 } 
