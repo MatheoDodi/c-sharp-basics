@@ -1,14 +1,16 @@
 ﻿<Properties StartupConfiguration="{379AA5BD-CD6C-4D27-8C2D-1E4742558EB1}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="helloWorld/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="helloWorld/GradeBook.cs">
     <Files>
-      <File FileName="helloWorld/Program.cs" Line="175" Column="12" />
+      <File FileName="helloWorld/Program.cs" Line="170" Column="31" />
+      <File FileName="helloWorld/ThrowAwayGradeBook.cs" Line="11" Column="20" />
+      <File FileName="helloWorld/GradeBook.cs" Line="18" Column="26" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="helloWorld" expanded="True">
             <Node name="helloWorld" expanded="True">
-              <Node name="Program.cs" selected="True" />
+              <Node name="GradeBook.cs" selected="True" />
             </Node>
           </Node>
         </State>

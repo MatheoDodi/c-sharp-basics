@@ -164,7 +164,7 @@ namespace helloWorld
 
             // GRADES
 
-            GradeBook book = new GradeBook();
+            GradeBook book = new ThrowAwayGradeBook();
             book.AddGrade(91);
             book.AddGrade(89.2f);
             book.AddGrade(75);
@@ -176,9 +176,9 @@ namespace helloWorld
             WriteResult("Lowest", (double)stats.LowestGrade);
 
             // Delegate
-            Writer writer = new Writer(WriteResult);
+            //Writer writer = new Writer(WriteResult);
 
-            writer("Delegate", 100);
+            //writer("Delegate", 100);
         }
         public delegate void Writer(string description, int result);
 

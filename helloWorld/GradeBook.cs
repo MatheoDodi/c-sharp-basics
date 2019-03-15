@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace helloWorld
 {
-    public class GradeBook
+    public class GradeBook : Object
     {
         public GradeBook()
         {
@@ -17,6 +17,7 @@ namespace helloWorld
 
         public GradeStatistics ComputeStatistics()
         {
+            Console.WriteLine("Inside GradeBook");
             GradeStatistics stats = new GradeStatistics();
             float sum = 0;
             foreach(float grade in grades)
@@ -31,6 +32,6 @@ namespace helloWorld
             return stats;
         }
 
-        private List<float> grades;
+        protected List<float> grades;
     }
 }
